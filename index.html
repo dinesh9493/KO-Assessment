@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - Product Details</title>
+
+    <!-- Styles - START -->
+    <link href="./lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/assessment.css" rel="stylesheet" />
+    <!-- Styles - END -->
+
+    <!-- SCRIPTS - START  -->
+    <script src="./lib/js/jquery.js"></script>
+    <script src="./lib/js/knockout.js"></script>
+    <script src="./lib/js/knockout-component.js"></script>
+    <script src="./lib/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/assessment.js"></script>
+    <!-- SCRIPTS - END  -->
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="heading">Maintain Product</p>
+        </div>
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="col-md-6 mt-3">
+            <label class="form-label" for="productNumber">Product Number</label>
+            <input
+              type="text"
+              class="form-control"
+              name="productNumber"
+              id="productNumber"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-3">
+            <label class="form-label" for="productDescription"
+              >Product Description</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="productDescription"
+              id="productDescription"
+            />
+          </div>
+          <div class="col-md-6 mt-3">
+            <label class="form-label" for="weight"
+              >Weight Per Unit of Measure</label
+            >
+            <input type="text" class="form-control" name="weight" id="weight" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-3">
+            <p class="form-label">Active Product?</p>
+            <input
+              type="checkbox"
+              name="activeProduct"
+              id="activeProduct"
+              value="Yes"
+              class="form-check-input"
+            />
+            <label for="activeProduct" class="form-label">Yes</label>
+          </div>
+          <div class="col-md-6 mt-3">
+            <label class="form-label" for="listPrice">List Price</label>
+            <input
+              type="text"
+              class="form-control"
+              name="listPrice"
+              id="listPrice"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-3"></div>
+          <div class="col-md-6 mt-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-3"></div>
+          <div class="col-md-6 mt-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-3"></div>
+          <div class="col-md-6 mt-3"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mt-3">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bind="click: saveProductDetails"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+      
+    </section>
+  </body>
+
+  <script></script>
+</html>
