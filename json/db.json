@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "productNumber": "sd",
+      "productDescription": "asd",
+      "weightPerUnitOfMeasure": "asd",
+      "activeProduct": true,
+      "listPrice": "asd",
+      "id": 1
+    },
+    {
+      "productNumber": "sadf",
+      "productDescription": "sadfasdf",
+      "weightPerUnitOfMeasure": "sadfasdf",
+      "activeProduct": true,
+      "listPrice": "sadf",
+      "id": 2
+    },
+    {
+      "productNumber": "sadfs",
+      "productDescription": "sdfs",
+      "weightPerUnitOfMeasure": "sdf",
+      "activeProduct": true,
+      "listPrice": "sdf",
+      "id": 3
+    }
+  ]
+}

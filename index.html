@@ -17,6 +17,7 @@
     <script src="./lib/js/knockout-component.js"></script>
     <script src="./lib/js/bootstrap.bundle.min.js"></script>
 
+    <script src="./assets/js/global.js"></script>
     <script src="./assets/js/assessment.js"></script>
     <!-- SCRIPTS - END  -->
   </head>
@@ -38,6 +39,7 @@
               class="form-control"
               name="productNumber"
               id="productNumber"
+              data-bind="value: productNumber"
             />
           </div>
         </div>
@@ -51,13 +53,20 @@
               class="form-control"
               name="productDescription"
               id="productDescription"
+              data-bind="value: productDescription"
             />
           </div>
           <div class="col-md-6 mt-3">
             <label class="form-label" for="weight"
               >Weight Per Unit of Measure</label
             >
-            <input type="text" class="form-control" name="weight" id="weight" />
+            <input
+              type="text"
+              class="form-control"
+              name="weight"
+              id="weight"
+              data-bind="value: weightPerUnitOfMeasure"
+            />
           </div>
         </div>
         <div class="row">
@@ -69,6 +78,7 @@
               id="activeProduct"
               value="Yes"
               class="form-check-input"
+              data-bind="checked: activeProduct"
             />
             <label for="activeProduct" class="form-label">Yes</label>
           </div>
@@ -79,6 +89,7 @@
               class="form-control"
               name="listPrice"
               id="listPrice"
+              data-bind="value: listPrice"
             />
           </div>
         </div>
@@ -107,9 +118,26 @@
           </div>
         </div>
       </form>
-      
     </section>
-  </body>
 
-  <script></script>
+    <!-- For Toast Message -->
+    <div
+      class="toast align-items-center"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+      id="toastForProductDetailsForm"
+      data-bind="class: toastBackgroundColorClassName"
+    >
+      <div class="d-flex">
+        <div class="toast-body" data-bind="text: toastMessage"></div>
+        <button
+          type="button"
+          class="btn-close me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+  </body>
 </html>
